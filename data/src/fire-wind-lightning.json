@@ -1,0 +1,415 @@
+[
+ {
+  "id": "great-fireball",
+  "name": "Fire Style: Great Fireball Jutsu",
+  "jp": "火遁・豪火球の術",
+  "romaji": "Katon: Gōkakyū no Jutsu",
+  "element": "fire",
+  "rank": "C",
+  "signs": [
+   "Snake",
+   "Ram",
+   "Monkey",
+   "Boar",
+   "Horse",
+   "Tiger"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Sasuke Uchiha",
+   "Itachi Uchiha"
+  ],
+  "desc": "Chakra kneaded in the chest is exhaled as one huge rolling sphere of flame. A rite of passage for the Uchiha clan.",
+  "tip": "Breathe in on Horse, hold Tiger like you are about to blow out a giant candle.",
+  "fx": {
+   "type": "fireball",
+   "palette": "fire",
+   "variant": "great"
+  }
+ },
+ {
+  "id": "phoenix-sage-fire",
+  "name": "Fire Style: Phoenix Sage Fire Jutsu",
+  "jp": "火遁・鳳仙火の術",
+  "romaji": "Katon: Hōsenka no Jutsu",
+  "element": "fire",
+  "rank": "C",
+  "signs": [
+   "Rat",
+   "Tiger",
+   "Dog",
+   "Ox",
+   "Hare",
+   "Tiger"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Sasuke Uchiha",
+   "Itachi Uchiha"
+  ],
+  "desc": "A spray of small fireballs spits out in a fan, each one steering on its own so the target cannot dodge them all.",
+  "tip": "Tiger appears twice: release the first one fully before forming it again.",
+  "fx": {
+   "type": "phoenixFlowers",
+   "palette": "fire",
+   "count": 8
+  }
+ },
+ {
+  "id": "dragon-flame",
+  "name": "Fire Style: Dragon Flame Jutsu",
+  "jp": "火遁・龍火の術",
+  "romaji": "Katon: Ryūka no Jutsu",
+  "element": "fire",
+  "rank": "C",
+  "signs": [
+   "Snake",
+   "Dragon",
+   "Hare",
+   "Tiger"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Sasuke Uchiha",
+   "Jiraiya"
+  ],
+  "desc": "A tight line of flame races forward like a burning fuse, often guided along wire straight to a trapped foe.",
+  "tip": "Short and quick: four signs, then aim the flame along an imaginary wire.",
+  "fx": {
+   "type": "flameStream",
+   "palette": "fire",
+   "variant": "dragonflame"
+  }
+ },
+ {
+  "id": "fire-dragon-flame-bullet",
+  "name": "Fire Style: Fire Dragon Flame Bullet",
+  "jp": "火遁・火龍炎弾",
+  "romaji": "Katon: Karyū Endan",
+  "element": "fire",
+  "rank": "B",
+  "signs": [
+   "Ram",
+   "Horse",
+   "Snake",
+   "Dragon",
+   "Rat",
+   "Ox",
+   "Tiger"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Hiruzen Sarutobi",
+   "Konohamaru Sarutobi"
+  ],
+  "desc": "A serpent of fire coils out of the mouth and lunges at the target, its body trailing a long wake of flame.",
+  "tip": "Seven signs ending on Tiger; take a deep breath before the last one.",
+  "fx": {
+   "type": "dragon",
+   "palette": "fire",
+   "variant": "fire"
+  }
+ },
+ {
+  "id": "ash-pile-burning",
+  "name": "Fire Style: Ash Pile Burning",
+  "jp": "火遁・灰積焼",
+  "romaji": "Katon: Haisekishō",
+  "element": "fire",
+  "rank": "B",
+  "signs": [
+   "Snake",
+   "Rat",
+   "Snake",
+   "Tiger"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Asuma Sarutobi"
+  ],
+  "desc": "A cloud of chakra-laced ash is blown over the enemy, then a click of the teeth sets the whole cloud ablaze.",
+  "tip": "Drop your hands between the two Snakes so the second one counts.",
+  "fx": {
+   "type": "ashBurn",
+   "palette": "fire"
+  }
+ },
+ {
+  "id": "amaterasu",
+  "name": "Amaterasu",
+  "jp": "天照",
+  "romaji": "Amaterasu",
+  "element": "fire",
+  "rank": "S",
+  "signs": [
+   "Bird",
+   "Snake",
+   "Tiger"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Itachi Uchiha",
+   "Sasuke Uchiha"
+  ],
+  "desc": "Black flames ignite wherever the eye focuses. They burn for days and cannot be put out by water.",
+  "tip": "Canon needs no seals, only a Mangekyō stare; stare hard at one spot after Tiger.",
+  "fx": {
+   "type": "blackFlames",
+   "palette": "blackfire",
+   "variant": "burst"
+  }
+ },
+ {
+  "id": "blaze-kagutsuchi",
+  "name": "Blaze Style: Kagutsuchi",
+  "jp": "炎遁・加具土命",
+  "romaji": "Enton: Kagutsuchi",
+  "element": "fire",
+  "rank": "S",
+  "signs": [
+   "Snake",
+   "Bird",
+   "Dragon",
+   "Tiger"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Sasuke Uchiha"
+  ],
+  "desc": "Black flames are shaped at will, here raised into a wall of jagged fire that shields the caster.",
+  "tip": "Canon has no seals; it is pure eye control of black fire.",
+  "fx": {
+   "type": "blackFlames",
+   "palette": "blackfire",
+   "variant": "shield"
+  }
+ },
+ {
+  "id": "great-breakthrough",
+  "name": "Wind Style: Great Breakthrough",
+  "jp": "風遁・大突破",
+  "romaji": "Fūton: Daitoppa",
+  "element": "wind",
+  "rank": "C",
+  "signs": [
+   "Tiger",
+   "Ox",
+   "Dog",
+   "Hare",
+   "Snake"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Orochimaru",
+   "Gaara"
+  ],
+  "desc": "A violent blast of wind is exhaled or pushed out, flattening trees and blowing enemies off their feet.",
+  "tip": "End on Snake, then thrust both palms forward to push the gust out.",
+  "fx": {
+   "type": "airBullets",
+   "palette": "wind",
+   "variant": "breakthrough"
+  }
+ },
+ {
+  "id": "vacuum-sphere",
+  "name": "Wind Style: Vacuum Sphere",
+  "jp": "風遁・真空玉",
+  "romaji": "Fūton: Shinkūgyoku",
+  "element": "wind",
+  "rank": "B",
+  "signs": [
+   "Rat",
+   "Hare",
+   "Dog"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Danzō Shimura"
+  ],
+  "desc": "Rapid-fire vacuum bullets are spat out one after another, each one a tiny pocket of cutting air.",
+  "tip": "Only three signs: Rat, Hare, Dog. Hold Dog and puff your cheeks for the volley.",
+  "fx": {
+   "type": "airBullets",
+   "palette": "wind",
+   "variant": "vacuum",
+   "count": 6
+  }
+ },
+ {
+  "id": "sickle-weasel",
+  "name": "Wind Style: Sickle Weasel Jutsu",
+  "jp": "カマイタチの術",
+  "romaji": "Kamaitachi no Jutsu",
+  "element": "wind",
+  "rank": "C",
+  "signs": [
+   "Snake",
+   "Dragon",
+   "Bird"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Temari"
+  ],
+  "desc": "One swing of a giant fan whips up a gust full of invisible blades that shreds whatever it passes.",
+  "tip": "Finish on Bird and swing your arm wide like a fan.",
+  "fx": {
+   "type": "windBlades",
+   "palette": "wind",
+   "variant": "scythe"
+  }
+ },
+ {
+  "id": "wind-cutter",
+  "name": "Wind Style: Wind Cutter Jutsu",
+  "jp": "風遁・風切りの術",
+  "romaji": "Fūton: Kazekiri no Jutsu",
+  "element": "wind",
+  "rank": "C",
+  "signs": [
+   "Tiger",
+   "Hare",
+   "Dog",
+   "Ram",
+   "Dragon"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Temari"
+  ],
+  "desc": "A thin, sharp slice of wind is flung forward to cut through ropes, wood or armor at range.",
+  "tip": "Finish on Dragon and slice one hand sideways like a blade.",
+  "fx": {
+   "type": "windBlades",
+   "palette": "wind",
+   "variant": "slash",
+   "count": 2
+  }
+ },
+ {
+  "id": "chidori",
+  "name": "Chidori",
+  "jp": "千鳥",
+  "romaji": "Chidori",
+  "element": "lightning",
+  "rank": "A",
+  "signs": [
+   "Ox",
+   "Hare",
+   "Monkey"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Sasuke Uchiha",
+   "Kakashi Hatake"
+  ],
+  "desc": "Lightning chakra gathers in one hand with a sound like a thousand chirping birds, then the user charges for a piercing thrust.",
+  "tip": "After Monkey, grip your wrist and keep the open hand pointed down.",
+  "fx": {
+   "type": "chidori",
+   "palette": "lightning",
+   "variant": "chidori"
+  }
+ },
+ {
+  "id": "raikiri",
+  "name": "Lightning Blade",
+  "jp": "雷切",
+  "romaji": "Raikiri",
+  "element": "lightning",
+  "rank": "S",
+  "signs": [
+   "Ox",
+   "Hare",
+   "Dog",
+   "Monkey"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Kakashi Hatake"
+  ],
+  "desc": "A refined, denser Chidori said to have once cut a bolt of lightning in half.",
+  "tip": "Canon uses the same seals as Chidori; Dog was added to tell them apart.",
+  "fx": {
+   "type": "chidori",
+   "palette": "lightning",
+   "variant": "raikiri"
+  }
+ },
+ {
+  "id": "chidori-spear",
+  "name": "Chidori Sharp Spear",
+  "jp": "千鳥鋭槍",
+  "romaji": "Chidori Eisō",
+  "element": "lightning",
+  "rank": "A",
+  "signs": [
+   "Ox",
+   "Monkey",
+   "Hare",
+   "Dragon"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Sasuke Uchiha"
+  ],
+  "desc": "The Chidori is stretched into a long blade of lightning that stabs at range.",
+  "tip": "Canon has no seals; thrust the hand forward after Dragon.",
+  "fx": {
+   "type": "chidori",
+   "palette": "lightning",
+   "variant": "spear"
+  }
+ },
+ {
+  "id": "lightning-hound",
+  "name": "Lightning Style: Lightning Beast Tracking Fang",
+  "jp": "雷遁・雷獣追牙",
+  "romaji": "Raiton: Raijū Tsuiga",
+  "element": "lightning",
+  "rank": "C",
+  "signs": [
+   "Dog",
+   "Ox",
+   "Hare",
+   "Monkey"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Kakashi Hatake"
+  ],
+  "desc": "Lightning in the hand takes the form of a hound that sprints at the target and follows if it dodges.",
+  "tip": "Dog first for the hound, then the Chidori trio.",
+  "fx": {
+   "type": "lightningBeast",
+   "palette": "lightning",
+   "variant": "hound"
+  }
+ },
+ {
+  "id": "kirin",
+  "name": "Kirin",
+  "jp": "麒麟",
+  "romaji": "Kirin",
+  "element": "lightning",
+  "rank": "S",
+  "signs": [
+   "Dragon",
+   "Horse",
+   "Bird",
+   "Ox"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Sasuke Uchiha"
+  ],
+  "desc": "Natural lightning from storm clouds heated by fire is pulled down in the shape of a beast. It strikes far too fast to dodge.",
+  "tip": "Canon needs no seals, only a raised arm; point at the sky, then bring it down.",
+  "fx": {
+   "type": "lightningStrike",
+   "palette": "lightning",
+   "variant": "kirin"
+  }
+ }
+]

@@ -1,0 +1,427 @@
+[
+ {
+  "id": "water-dragon-bullet",
+  "name": "Water Style: Water Dragon Bullet Jutsu",
+  "jp": "水遁・水龍弾の術",
+  "romaji": "Suiton: Suiryūdan no Jutsu",
+  "element": "water",
+  "rank": "B",
+  "signs": [
+   "Ox",
+   "Monkey",
+   "Hare",
+   "Rat",
+   "Boar",
+   "Bird",
+   "Ox",
+   "Horse"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Zabuza Momochi",
+   "Kakashi Hatake"
+  ],
+  "desc": "A column of water rises and twists into a roaring serpent that lunges at the target with crushing weight.",
+  "tip": "Canon uses 44 seals; this is the opening eight. Keep a steady rhythm, like reciting a long chant.",
+  "fx": {
+   "type": "dragon",
+   "palette": "water",
+   "variant": "water"
+  }
+ },
+ {
+  "id": "water-shark-bomb",
+  "name": "Water Style: Water Shark Bomb Jutsu",
+  "jp": "水遁・水鮫弾の術",
+  "romaji": "Suiton: Suikōdan no Jutsu",
+  "element": "water",
+  "rank": "B",
+  "signs": [
+   "Tiger",
+   "Ox",
+   "Dragon",
+   "Hare",
+   "Bird",
+   "Dragon",
+   "Ram"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Kisame Hoshigaki",
+   "Kakashi Hatake"
+  ],
+  "desc": "Gathered water takes the shape of a hungry shark that races forward and bursts on impact.",
+  "tip": "Canon has ten seals including a clone seal; this is the seven-seal order from the detector project. Snap the final Ram like you are releasing the shark.",
+  "fx": {
+   "type": "waterShark",
+   "palette": "water",
+   "variant": "single"
+  }
+ },
+ {
+  "id": "water-prison",
+  "name": "Water Style: Water Prison Jutsu",
+  "jp": "水牢の術",
+  "romaji": "Suirō no Jutsu",
+  "element": "water",
+  "rank": "C",
+  "signs": [
+   "Snake",
+   "Ox",
+   "Gassho"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Zabuza Momochi",
+   "Kisame Hoshigaki"
+  ],
+  "desc": "A sphere of dense water seals the target inside; the caster keeps one hand in it to hold the cage shut.",
+  "tip": "Finish by pressing both palms together, then imagine holding a heavy ball of water.",
+  "fx": {
+   "type": "waterPrison",
+   "palette": "water"
+  }
+ },
+ {
+  "id": "collision-destruction",
+  "name": "Water Style: Collision Destruction",
+  "jp": "水遁・爆水衝波",
+  "romaji": "Suiton: Bakusui Shōha",
+  "element": "water",
+  "rank": "B",
+  "signs": [
+   "Snake",
+   "Dragon",
+   "Mizunoe"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Kisame Hoshigaki"
+  ],
+  "desc": "The caster spews out a staggering mass of water that turns dry land into open sea, then drives the swell into the enemy.",
+  "tip": "Canon uses a single Snake; Dragon and Mizunoe are added here. Push both hands outward on the last sign.",
+  "fx": {
+   "type": "waterWave",
+   "palette": "water",
+   "variant": "collision"
+  }
+ },
+ {
+  "id": "hidden-mist",
+  "name": "Hidden Mist Jutsu",
+  "jp": "霧隠れの術",
+  "romaji": "Kirigakure no Jutsu",
+  "element": "water",
+  "rank": "D",
+  "signs": [
+   "Ox",
+   "Snake",
+   "Ram"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Zabuza Momochi"
+  ],
+  "desc": "Chakra-laced fog rolls in until the battlefield is a white blank, perfect for a silent approach.",
+  "tip": "Ox, Snake, Ram, then hold Ram still while the fog thickens.",
+  "fx": {
+   "type": "mist",
+   "palette": "smoke"
+  }
+ },
+ {
+  "id": "water-fang-bullet",
+  "name": "Water Style: Water Fang Bullet",
+  "jp": "水遁・水牙弾",
+  "romaji": "Suiton: Suigadan",
+  "element": "water",
+  "rank": "B",
+  "signs": [
+   "Tiger",
+   "Mizunoe",
+   "Snake"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Itachi Uchiha"
+  ],
+  "desc": "Water underfoot spirals into drill-like fangs that spring up and stab inward.",
+  "tip": "Canon is a lone Tiger; this app uses three signs. Hold Snake low, as if lifting water from the ground.",
+  "fx": {
+   "type": "waterBullets",
+   "palette": "water",
+   "variant": "fang"
+  }
+ },
+ {
+  "id": "earth-style-wall",
+  "name": "Earth Style: Mud Wall",
+  "jp": "土遁・土流壁",
+  "romaji": "Doton: Doryūheki",
+  "element": "earth",
+  "rank": "B",
+  "signs": [
+   "Tiger",
+   "Hare",
+   "Boar",
+   "Dog"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Kakashi Hatake",
+   "Yamato"
+  ],
+  "desc": "Mud spat onto the ground swells into a thick earthen wall that stops attacks cold.",
+  "tip": "Slam the last sign down as if pressing a hand to the ground.",
+  "fx": {
+   "type": "earthWall",
+   "palette": "earth",
+   "variant": "wall"
+  }
+ },
+ {
+  "id": "earth-dragon-bullet",
+  "name": "Earth Style: Earth Dragon Bullet",
+  "jp": "土遁・土龍弾",
+  "romaji": "Doton: Doryūdan",
+  "element": "earth",
+  "rank": "B",
+  "signs": [
+   "Ram",
+   "Horse",
+   "Dragon"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Hiruzen Sarutobi"
+  ],
+  "desc": "The ground heaves up into a rocky dragon head that spits a volley of mud bullets.",
+  "tip": "Three signs ending on Dragon; lean forward as the dragon head rises.",
+  "fx": {
+   "type": "dragon",
+   "palette": "earth",
+   "variant": "earth"
+  }
+ },
+ {
+  "id": "earth-flow-spears",
+  "name": "Earth Style: Earth Flow Spears",
+  "jp": "土遁・土流槍",
+  "romaji": "Doton: Doryūsō",
+  "element": "earth",
+  "rank": "B",
+  "signs": [
+   "Snake",
+   "Rat",
+   "Bird"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Yamato",
+   "Kurotsuchi"
+  ],
+  "desc": "Sharp stone spikes burst out of the earth in a line, skewering whatever stands above them.",
+  "tip": "Snake, Rat, Bird; keep each sign crisp so Rat is not read as Snake.",
+  "fx": {
+   "type": "earthSpikes",
+   "palette": "earth",
+   "variant": "spikes"
+  }
+ },
+ {
+  "id": "swamp-of-the-underworld",
+  "name": "Earth Style: Swamp of the Underworld",
+  "jp": "土遁・黄泉沼",
+  "romaji": "Doton: Yomi Numa",
+  "element": "earth",
+  "rank": "A",
+  "signs": [
+   "Boar",
+   "Tiger"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Jiraiya"
+  ],
+  "desc": "Solid ground turns into a deep bog that drags anything standing on it down into the mud.",
+  "tip": "Just Boar then Tiger. Hold Tiger and press downward as the ground softens.",
+  "fx": {
+   "type": "mudSwamp",
+   "palette": "earth",
+   "variant": "swamp"
+  }
+ },
+ {
+  "id": "wood-dragon",
+  "name": "Wood Style: Wood Dragon Jutsu",
+  "jp": "木遁・木龍の術",
+  "romaji": "Mokuton: Mokuryū no Jutsu",
+  "element": "wood",
+  "rank": "S",
+  "signs": [
+   "Snake",
+   "Ram",
+   "Hare",
+   "Dog"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Hashirama Senju"
+  ],
+  "desc": "A colossal dragon of living timber coils out of the ground and binds its prey while sapping its chakra.",
+  "tip": "Canon order minus the final technique-specific seal.",
+  "fx": {
+   "type": "dragon",
+   "palette": "wood",
+   "variant": "wood"
+  }
+ },
+ {
+  "id": "four-pillar-prison",
+  "name": "Wood Style: Four-Pillar Prison Jutsu",
+  "jp": "木遁・四柱牢の術",
+  "romaji": "Mokuton: Shichūrō no Jutsu",
+  "element": "wood",
+  "rank": "A",
+  "signs": [
+   "Ram",
+   "Ox",
+   "Boar",
+   "Snake"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Yamato"
+  ],
+  "desc": "Wooden pillars shoot up around the target and lock together into a sturdy cage.",
+  "tip": "Ram, Ox, Boar, Snake; hold Snake while the pillars close in.",
+  "fx": {
+   "type": "woodGrowth",
+   "palette": "wood",
+   "variant": "prison"
+  }
+ },
+ {
+  "id": "demonic-ice-mirrors",
+  "name": "Secret Jutsu: Demonic Mirroring Ice Crystals",
+  "jp": "魔鏡氷晶",
+  "romaji": "Makyō Hyōshō",
+  "element": "ice",
+  "rank": "A",
+  "signs": [
+   "Mizunoe",
+   "Ram",
+   "Snake",
+   "Bird"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Haku"
+  ],
+  "desc": "Panes of ice form a ring of mirrors; the caster darts between them faster than the eye can follow.",
+  "tip": "Canon uses one technique-specific seal; this app assigns four. Start on Mizunoe and end on a sharp Bird.",
+  "fx": {
+   "type": "iceShards",
+   "palette": "ice",
+   "variant": "mirrors"
+  }
+ },
+ {
+  "id": "certain-kill-ice-spears",
+  "name": "Certain-Kill Ice Spears",
+  "jp": "必殺氷槍",
+  "romaji": "Hissatsu Hyōsō",
+  "element": "ice",
+  "rank": "B",
+  "signs": [
+   "Mizunoe",
+   "Hare",
+   "Bird"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Haku"
+  ],
+  "desc": "Moisture in the air freezes into a bristling ring of ice spikes that close in on the target.",
+  "tip": "No canon seals are known; this app uses Mizunoe, Hare, Bird. Flick your fingers outward at the end.",
+  "fx": {
+   "type": "iceShards",
+   "palette": "ice",
+   "variant": "spikes"
+  }
+ },
+ {
+  "id": "sand-coffin",
+  "name": "Sand Coffin",
+  "jp": "砂縛柩",
+  "romaji": "Sabaku Kyū",
+  "element": "sand",
+  "rank": "B",
+  "signs": [
+   "Ram",
+   "Tiger",
+   "Gassho"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Gaara"
+  ],
+  "desc": "Sand pours over the target and hardens into a tight shell, pinning them completely.",
+  "tip": "Gaara needs no seals; close your hand into a fist after the last sign.",
+  "fx": {
+   "type": "sandSwirl",
+   "palette": "sand",
+   "variant": "coffin"
+  }
+ },
+ {
+  "id": "sand-shield",
+  "name": "Shield of Sand",
+  "jp": "砂の盾",
+  "romaji": "Suna no Tate",
+  "element": "sand",
+  "rank": "B",
+  "signs": [
+   "Dog",
+   "Rat",
+   "Monkey"
+  ],
+  "signsSource": "adapted",
+  "users": [
+   "Gaara"
+  ],
+  "desc": "Sand rises on its own to block any attack, forming a curved barrier before the caster even reacts.",
+  "tip": "Gaara's sand moves on its own; these three signs are the app's trigger. Raise one arm as the wall forms.",
+  "fx": {
+   "type": "sandSwirl",
+   "palette": "sand",
+   "variant": "shield"
+  }
+ },
+ {
+  "id": "laser-circus",
+  "name": "Storm Style: Laser Circus",
+  "jp": "嵐遁・励挫鎖苛素",
+  "romaji": "Ranton: Reizā Sākasu",
+  "element": "storm",
+  "rank": "A",
+  "signs": [
+   "Rat",
+   "Tiger",
+   "Dog",
+   "Snake",
+   "Dragon"
+  ],
+  "signsSource": "canon",
+  "users": [
+   "Darui"
+  ],
+  "desc": "Beams of crackling storm chakra fire from the hands and bend through the air to chase their targets.",
+  "tip": "Five signs ending on Dragon, then spread your fingers to fire the beams.",
+  "fx": {
+   "type": "chidori",
+   "palette": "lightning",
+   "variant": "current"
+  }
+ }
+]

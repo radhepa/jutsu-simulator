@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.webgpu.min.js"></script>
+<script type="importmap">{ "imports": { "pixi.js": "https://cdn.jsdelivr.net/npm/pixi.js@8.22.0/dist/pixi.min.mjs", "pixi-filters": "https://cdn.jsdelivr.net/npm/pixi-filters@6.1.5/dist/pixi-filters.mjs" } }</script>
+</head><body><div id="host" style="width:640px;height:480px"></div>
+<!-- Core smoke test: Game init/start with whatever camera is available; logs events to window.__log -->
+<script type="module">
+import { Game } from '../js/game.js';
+window.__log = [];
+const game = await new Game().init(document.getElementById('host'));
+for (const t of ['status','ready','detect','progress','buffer','fizzle','cast','castEnd','error']) game.addEventListener(t, (e) => { if (t !== 'detect' || window.__log.filter(x => x.t === 'detect').length < 3) window.__log.push({ t, d: JSON.stringify(e.detail).slice(0, 120) }); });
+window.game = game;
+await game.start();
+game.setMode('freestyle');
+setTimeout(async () => { await game.cast(game.jutsu[0].id); window.__done = true; }, 1500);
+</script></body></html>

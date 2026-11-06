@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FX lab</title>
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="importmap">
+{ "imports": {
+  "pixi.js": "https://cdn.jsdelivr.net/npm/pixi.js@8.22.0/dist/pixi.min.mjs",
+  "pixi-filters": "https://cdn.jsdelivr.net/npm/pixi-filters@6.1.5/dist/pixi-filters.mjs"
+} }
+</script>
+<style>
+  body { margin: 0; background: #111; color: #ddd; font: 14px system-ui; }
+  #bar { display: flex; gap: 8px; padding: 8px; flex-wrap: wrap; align-items: center; }
+  #host { width: 960px; height: 540px; position: relative; background: #000; }
+  select, button, input { font: inherit; }
+</style>
+</head>
+<body>
+<!--
+  Effect lab. Interactive:  dev/fx.html?fx=fireball&palette=fire&variant=great
+  Screenshot mode (used by tools/shot.mjs): add &shot=300,900,1600 -> window.__sheet = PNG data URL
+  A fake "camera" (drawn person silhouette) stands in for the webcam; anchors are fixed.
+-->
+<div id="bar">
+  <select id="jutsu"><option value="">— jutsu —</option></select>
+  <select id="fx"></select>
+  <select id="palette"></select>
+  <input id="variant" placeholder="variant" size="10">
+  <input id="count" placeholder="count" size="4">
+  <input id="scale" placeholder="scale" size="4">
+  <button id="play">Play</button>
+  <span id="info"></span>
+</div>
+<div id="host"></div>
+<script type="module">
+import { createStage } from '../js/engine/stage.js';
+import { PALETTES } from '../js/engine/palettes.js';
+import { loadEffects } from '../js/fx/index.js';
+import { initAudio } from '../js/engine/audio.js';
+
+const q = new URLSearchParams(location.search);
+const shot = q.get('shot');
+const $ = (id) => document.getElementById(id);
+
+// Fake camera: room gradient + person silhouette, streamed into a <video>.
+const VW = 960, VH = 720;
+const cam = document.createElement('canvas'); cam.width = VW; cam.height = VH;
+const person = document.createElement('canvas'); person.width = VW; person.height = VH;
+function drawPerson(g) {
+  g.fillStyle = '#5a6f86';
+  g.beginPath(); g.ellipse(VW / 2, VH * 0.34, 95, 120, 0, 0, 7); g.fill();          // head
+  g.beginPath(); g.moveTo(VW * 0.2, VH); g.quadraticCurveTo(VW * 0.22, VH * 0.55, VW / 2, VH * 0.52);
+  g.quadraticCurveTo(VW * 0.78, VH * 0.55, VW * 0.8, VH); g.fill();                // shoulders
+  g.fillStyle = '#c99a7c';
+  g.beginPath(); g.ellipse(VW / 2, VH * 0.36, 70, 92, 0, 0, 7); g.fill();          // face
+  g.fillStyle = '#7a3a2a'; g.fillRect(VW / 2 - 22, VH * 0.43, 44, 8);              // mouth
+  g.fillStyle = '#c99a7c'; g.beginPath(); g.ellipse(VW / 2, VH * 0.72, 70, 60, 0, 0, 7); g.fill(); // hands
+}
+{
+  const g = cam.getContext('2d');
+  const bg = g.createLinearGradient(0, 0, 0, VH); bg.addColorStop(0, '#3b3a40'); bg.addColorStop(1, '#1d1c20');
+  g.fillStyle = bg; g.fillRect(0, 0, VW, VH);
+  g.fillStyle = '#4a4850'; g.fillRect(VW * 0.08, VH * 0.12, VW * 0.22, VH * 0.4);   // "window"
+  drawPerson(g);
+  drawPerson(person.getContext('2d'));
+}
+const video = document.createElement('video');
+video.muted = true; video.playsInline = true;
+video.srcObject = cam.captureStream(30);
+await video.play();
+// keep the stream producing frames
+setInterval(() => { const g = cam.getContext('2d'); g.fillStyle = 'rgba(0,0,0,0.002)'; g.fillRect(0, 0, 1, 1); }, 100);
+
+const stage = await createStage($('host'), video, { manual: !!shot });
+stage.attachVideo();
+stage.setAnchors({ mouth: { x: VW / 2, y: VH * 0.435 }, face: { x: VW / 2, y: VH * 0.36 },
+  hands: [{ x: VW / 2, y: VH * 0.72, size: 120 }], signBox: { x: VW / 2 - 90, y: VH * 0.62, w: 180, h: 150 } });
+stage.setPersonSource(person, async () => true);
+
+const effects = await loadEffects();
+const data = await fetch('../data/jutsu.json').then((r) => r.json()).catch(() => ({ jutsu: [] }));
+const jutsu = data.jutsu || data;
+$('fx').innerHTML = Object.keys(effects).sort().map((k) => `<option>${k}</option>`).join('');
+$('palette').innerHTML = '<option value="">(default)</option>' + Object.keys(PALETTES).map((k) => `<option>${k}</option>`).join('');
+$('jutsu').innerHTML += jutsu.map((j) => `<option value="${j.id}">${j.name}</option>`).join('');
+$('jutsu').onchange = () => {
+  const j = jutsu.find((x) => x.id === $('jutsu').value); if (!j) return;
+  $('fx').value = j.fx.type; $('palette').value = j.fx.palette || ''; $('variant').value = j.fx.variant || '';
+  $('count').value = j.fx.count ?? ''; $('scale').value = j.fx.scale ?? '';
+};
+for (const k of ['fx', 'palette', 'variant', 'count', 'scale']) if (q.get(k)) $(k).value = q.get(k);
+
+function params() {
+  const p = { type: $('fx').value };
+  if ($('palette').value) p.palette = $('palette').value;
+  if ($('variant').value) p.variant = $('variant').value;
+  if ($('count').value) p.count = +$('count').value;
+  if ($('scale').value) p.scale = +$('scale').value;
+  return p;
+}
+$('play').onclick = () => { initAudio(); const p = params(); $('info').textContent = JSON.stringify(p); stage.play(effects[p.type], p); };
+
+if (shot) {
+  // Render the effect at the requested times and stitch a labelled contact sheet.
+  const times = shot.split(',').map(Number);
+  const p = params();
+  const errors = [];
+  addEventListener('error', (e) => errors.push(String(e.message)));
+  const fn = effects[p.type];
+  if (!fn) { window.__sheet = 'ERROR: unknown fx ' + p.type; }
+  else {
+    const done = stage.play(fn, p).catch((e) => errors.push(String(e)));
+    const frames = []; let t = 0;
+    for (const target of times) { await stage.step(target - t); t = target; frames.push(stage.app.canvas.toDataURL('image/png')); }
+    const W = 480, H = 270, sheet = document.createElement('canvas');
+    sheet.width = W * Math.min(frames.length, 3); sheet.height = H * Math.ceil(frames.length / 3);
+    const sg = sheet.getContext('2d');
+    for (let i = 0; i < frames.length; i++) {
+      const im = new Image(); im.src = frames[i]; await im.decode();
+      const x = (i % 3) * W, y = Math.floor(i / 3) * H;
+      sg.drawImage(im, x, y, W, H);
+      sg.fillStyle = '#000a'; sg.fillRect(x, y, 90, 22); sg.fillStyle = '#fff'; sg.font = '14px sans-serif'; sg.fillText(times[i] + ' ms', x + 6, y + 16);
+    }
+    window.__errors = errors;
+    window.__sheet = sheet.toDataURL('image/png');
+  }
+}
+window.__ready = true;
+</script>
+</body>
+</html>

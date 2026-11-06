@@ -1,0 +1,1275 @@
+{
+ "jutsu": [
+  {
+   "id": "earth-dragon-bullet",
+   "name": "Earth Style: Earth Dragon Bullet",
+   "jp": "土遁・土龍弾",
+   "romaji": "Doton: Doryūdan",
+   "element": "earth",
+   "rank": "B",
+   "signs": [
+    "Ram",
+    "Horse",
+    "Dragon"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Hiruzen Sarutobi"
+   ],
+   "desc": "The ground heaves up into a rocky dragon head that spits a volley of mud bullets.",
+   "tip": "Three signs ending on Dragon; lean forward as the dragon head rises.",
+   "fx": {
+    "type": "dragon",
+    "palette": "earth",
+    "variant": "earth"
+   }
+  },
+  {
+   "id": "earth-flow-spears",
+   "name": "Earth Style: Earth Flow Spears",
+   "jp": "土遁・土流槍",
+   "romaji": "Doton: Doryūsō",
+   "element": "earth",
+   "rank": "B",
+   "signs": [
+    "Snake",
+    "Rat",
+    "Bird"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Yamato",
+    "Kurotsuchi"
+   ],
+   "desc": "Sharp stone spikes burst out of the earth in a line, skewering whatever stands above them.",
+   "tip": "Snake, Rat, Bird; keep each sign crisp so Rat is not read as Snake.",
+   "fx": {
+    "type": "earthSpikes",
+    "palette": "earth",
+    "variant": "spikes"
+   }
+  },
+  {
+   "id": "earth-style-wall",
+   "name": "Earth Style: Mud Wall",
+   "jp": "土遁・土流壁",
+   "romaji": "Doton: Doryūheki",
+   "element": "earth",
+   "rank": "B",
+   "signs": [
+    "Tiger",
+    "Hare",
+    "Boar",
+    "Dog"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Kakashi Hatake",
+    "Yamato"
+   ],
+   "desc": "Mud spat onto the ground swells into a thick earthen wall that stops attacks cold.",
+   "tip": "Slam the last sign down as if pressing a hand to the ground.",
+   "fx": {
+    "type": "earthWall",
+    "palette": "earth",
+    "variant": "wall"
+   }
+  },
+  {
+   "id": "swamp-of-the-underworld",
+   "name": "Earth Style: Swamp of the Underworld",
+   "jp": "土遁・黄泉沼",
+   "romaji": "Doton: Yomi Numa",
+   "element": "earth",
+   "rank": "A",
+   "signs": [
+    "Boar",
+    "Tiger"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Jiraiya"
+   ],
+   "desc": "Solid ground turns into a deep bog that drags anything standing on it down into the mud.",
+   "tip": "Just Boar then Tiger. Hold Tiger and press downward as the ground softens.",
+   "fx": {
+    "type": "mudSwamp",
+    "palette": "earth",
+    "variant": "swamp"
+   }
+  },
+  {
+   "id": "dragon-flame",
+   "name": "Fire Style: Dragon Flame Jutsu",
+   "jp": "火遁・龍火の術",
+   "romaji": "Katon: Ryūka no Jutsu",
+   "element": "fire",
+   "rank": "C",
+   "signs": [
+    "Snake",
+    "Dragon",
+    "Hare",
+    "Tiger"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Sasuke Uchiha",
+    "Jiraiya"
+   ],
+   "desc": "A tight line of flame races forward like a burning fuse, often guided along wire straight to a trapped foe.",
+   "tip": "Short and quick: four signs, then aim the flame along an imaginary wire.",
+   "fx": {
+    "type": "flameStream",
+    "palette": "fire",
+    "variant": "dragonflame"
+   }
+  },
+  {
+   "id": "great-fireball",
+   "name": "Fire Style: Great Fireball Jutsu",
+   "jp": "火遁・豪火球の術",
+   "romaji": "Katon: Gōkakyū no Jutsu",
+   "element": "fire",
+   "rank": "C",
+   "signs": [
+    "Snake",
+    "Ram",
+    "Monkey",
+    "Boar",
+    "Horse",
+    "Tiger"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Sasuke Uchiha",
+    "Itachi Uchiha"
+   ],
+   "desc": "Chakra kneaded in the chest is exhaled as one huge rolling sphere of flame. A rite of passage for the Uchiha clan.",
+   "tip": "Breathe in on Horse, hold Tiger like you are about to blow out a giant candle.",
+   "fx": {
+    "type": "fireball",
+    "palette": "fire",
+    "variant": "great"
+   }
+  },
+  {
+   "id": "phoenix-sage-fire",
+   "name": "Fire Style: Phoenix Sage Fire Jutsu",
+   "jp": "火遁・鳳仙火の術",
+   "romaji": "Katon: Hōsenka no Jutsu",
+   "element": "fire",
+   "rank": "C",
+   "signs": [
+    "Rat",
+    "Tiger",
+    "Dog",
+    "Ox",
+    "Hare",
+    "Tiger"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Sasuke Uchiha",
+    "Itachi Uchiha"
+   ],
+   "desc": "A spray of small fireballs spits out in a fan, each one steering on its own so the target cannot dodge them all.",
+   "tip": "Tiger appears twice: release the first one fully before forming it again.",
+   "fx": {
+    "type": "phoenixFlowers",
+    "palette": "fire",
+    "count": 8
+   }
+  },
+  {
+   "id": "ash-pile-burning",
+   "name": "Fire Style: Ash Pile Burning",
+   "jp": "火遁・灰積焼",
+   "romaji": "Katon: Haisekishō",
+   "element": "fire",
+   "rank": "B",
+   "signs": [
+    "Snake",
+    "Rat",
+    "Snake",
+    "Tiger"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Asuma Sarutobi"
+   ],
+   "desc": "A cloud of chakra-laced ash is blown over the enemy, then a click of the teeth sets the whole cloud ablaze.",
+   "tip": "Drop your hands between the two Snakes so the second one counts.",
+   "fx": {
+    "type": "ashBurn",
+    "palette": "fire"
+   }
+  },
+  {
+   "id": "fire-dragon-flame-bullet",
+   "name": "Fire Style: Fire Dragon Flame Bullet",
+   "jp": "火遁・火龍炎弾",
+   "romaji": "Katon: Karyū Endan",
+   "element": "fire",
+   "rank": "B",
+   "signs": [
+    "Ram",
+    "Horse",
+    "Snake",
+    "Dragon",
+    "Rat",
+    "Ox",
+    "Tiger"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Hiruzen Sarutobi",
+    "Konohamaru Sarutobi"
+   ],
+   "desc": "A serpent of fire coils out of the mouth and lunges at the target, its body trailing a long wake of flame.",
+   "tip": "Seven signs ending on Tiger; take a deep breath before the last one.",
+   "fx": {
+    "type": "dragon",
+    "palette": "fire",
+    "variant": "fire"
+   }
+  },
+  {
+   "id": "amaterasu",
+   "name": "Amaterasu",
+   "jp": "天照",
+   "romaji": "Amaterasu",
+   "element": "fire",
+   "rank": "S",
+   "signs": [
+    "Bird",
+    "Snake",
+    "Tiger"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Itachi Uchiha",
+    "Sasuke Uchiha"
+   ],
+   "desc": "Black flames ignite wherever the eye focuses. They burn for days and cannot be put out by water.",
+   "tip": "Canon needs no seals, only a Mangekyō stare; stare hard at one spot after Tiger.",
+   "fx": {
+    "type": "blackFlames",
+    "palette": "blackfire",
+    "variant": "burst"
+   }
+  },
+  {
+   "id": "blaze-kagutsuchi",
+   "name": "Blaze Style: Kagutsuchi",
+   "jp": "炎遁・加具土命",
+   "romaji": "Enton: Kagutsuchi",
+   "element": "fire",
+   "rank": "S",
+   "signs": [
+    "Snake",
+    "Bird",
+    "Dragon",
+    "Tiger"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Sasuke Uchiha"
+   ],
+   "desc": "Black flames are shaped at will, here raised into a wall of jagged fire that shields the caster.",
+   "tip": "Canon has no seals; it is pure eye control of black fire.",
+   "fx": {
+    "type": "blackFlames",
+    "palette": "blackfire",
+    "variant": "shield"
+   }
+  },
+  {
+   "id": "thousand-crows",
+   "name": "Scattering Thousand Crows",
+   "jp": "散千烏の術",
+   "romaji": "Sanzengarasu no Jutsu",
+   "element": "genjutsu",
+   "rank": "C",
+   "signs": [
+    "Rat",
+    "Boar",
+    "Tiger"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Aoba Yamashiro"
+   ],
+   "desc": "A storm of black crows bursts outward and fills the victim's vision, hiding the caster's real movements.",
+   "tip": "Finish on Tiger and flick your hands open as the flock scatters.",
+   "fx": {
+    "type": "genjutsu",
+    "palette": "shadow",
+    "variant": "crows"
+   }
+  },
+  {
+   "id": "tree-binding-death",
+   "name": "Demonic Illusion: Tree Binding Death",
+   "jp": "魔幻・樹縛殺",
+   "romaji": "Magen: Jubaku Satsu",
+   "element": "genjutsu",
+   "rank": "B",
+   "signs": [
+    "Dog",
+    "Snake",
+    "Monkey",
+    "Ox",
+    "Tiger"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Kurenai Yūhi"
+   ],
+   "desc": "The victim believes a tree has grown around them and locked them in place, while blossoms drift down and the caster closes in.",
+   "tip": "Calm, deliberate signs. Genjutsu is about control, not force.",
+   "fx": {
+    "type": "genjutsu",
+    "palette": "sakura",
+    "variant": "petals"
+   }
+  },
+  {
+   "id": "tsukuyomi",
+   "name": "Tsukuyomi",
+   "jp": "月読",
+   "romaji": "Tsukuyomi",
+   "element": "genjutsu",
+   "rank": "S",
+   "signs": [
+    "Bird",
+    "Mizunoe",
+    "Snake"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Itachi Uchiha"
+   ],
+   "desc": "One look traps the victim in a red-and-black world where the caster controls time; days of torment pass in a blink.",
+   "tip": "Canon needs only a Mangekyō glance; this app gives it three signs. Keep your eyes locked on the lens.",
+   "fx": {
+    "type": "genjutsu",
+    "palette": "genjutsu",
+    "variant": "tsukuyomi"
+   }
+  },
+  {
+   "id": "certain-kill-ice-spears",
+   "name": "Certain-Kill Ice Spears",
+   "jp": "必殺氷槍",
+   "romaji": "Hissatsu Hyōsō",
+   "element": "ice",
+   "rank": "B",
+   "signs": [
+    "Mizunoe",
+    "Hare",
+    "Bird"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Haku"
+   ],
+   "desc": "Moisture in the air freezes into a bristling ring of ice spikes that close in on the target.",
+   "tip": "No canon seals are known; this app uses Mizunoe, Hare, Bird. Flick your fingers outward at the end.",
+   "fx": {
+    "type": "iceShards",
+    "palette": "ice",
+    "variant": "spikes"
+   }
+  },
+  {
+   "id": "demonic-ice-mirrors",
+   "name": "Secret Jutsu: Demonic Mirroring Ice Crystals",
+   "jp": "魔鏡氷晶",
+   "romaji": "Makyō Hyōshō",
+   "element": "ice",
+   "rank": "A",
+   "signs": [
+    "Mizunoe",
+    "Ram",
+    "Snake",
+    "Bird"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Haku"
+   ],
+   "desc": "Panes of ice form a ring of mirrors; the caster darts between them faster than the eye can follow.",
+   "tip": "Canon uses one technique-specific seal; this app assigns four. Start on Mizunoe and end on a sharp Bird.",
+   "fx": {
+    "type": "iceShards",
+    "palette": "ice",
+    "variant": "mirrors"
+   }
+  },
+  {
+   "id": "lightning-hound",
+   "name": "Lightning Style: Lightning Beast Tracking Fang",
+   "jp": "雷遁・雷獣追牙",
+   "romaji": "Raiton: Raijū Tsuiga",
+   "element": "lightning",
+   "rank": "C",
+   "signs": [
+    "Dog",
+    "Ox",
+    "Hare",
+    "Monkey"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Kakashi Hatake"
+   ],
+   "desc": "Lightning in the hand takes the form of a hound that sprints at the target and follows if it dodges.",
+   "tip": "Dog first for the hound, then the Chidori trio.",
+   "fx": {
+    "type": "lightningBeast",
+    "palette": "lightning",
+    "variant": "hound"
+   }
+  },
+  {
+   "id": "chidori",
+   "name": "Chidori",
+   "jp": "千鳥",
+   "romaji": "Chidori",
+   "element": "lightning",
+   "rank": "A",
+   "signs": [
+    "Ox",
+    "Hare",
+    "Monkey"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Sasuke Uchiha",
+    "Kakashi Hatake"
+   ],
+   "desc": "Lightning chakra gathers in one hand with a sound like a thousand chirping birds, then the user charges for a piercing thrust.",
+   "tip": "After Monkey, grip your wrist and keep the open hand pointed down.",
+   "fx": {
+    "type": "chidori",
+    "palette": "lightning",
+    "variant": "chidori"
+   }
+  },
+  {
+   "id": "chidori-spear",
+   "name": "Chidori Sharp Spear",
+   "jp": "千鳥鋭槍",
+   "romaji": "Chidori Eisō",
+   "element": "lightning",
+   "rank": "A",
+   "signs": [
+    "Ox",
+    "Monkey",
+    "Hare",
+    "Dragon"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Sasuke Uchiha"
+   ],
+   "desc": "The Chidori is stretched into a long blade of lightning that stabs at range.",
+   "tip": "Canon has no seals; thrust the hand forward after Dragon.",
+   "fx": {
+    "type": "chidori",
+    "palette": "lightning",
+    "variant": "spear"
+   }
+  },
+  {
+   "id": "kirin",
+   "name": "Kirin",
+   "jp": "麒麟",
+   "romaji": "Kirin",
+   "element": "lightning",
+   "rank": "S",
+   "signs": [
+    "Dragon",
+    "Horse",
+    "Bird",
+    "Ox"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Sasuke Uchiha"
+   ],
+   "desc": "Natural lightning from storm clouds heated by fire is pulled down in the shape of a beast. It strikes far too fast to dodge.",
+   "tip": "Canon needs no seals, only a raised arm; point at the sky, then bring it down.",
+   "fx": {
+    "type": "lightningStrike",
+    "palette": "lightning",
+    "variant": "kirin"
+   }
+  },
+  {
+   "id": "raikiri",
+   "name": "Lightning Blade",
+   "jp": "雷切",
+   "romaji": "Raikiri",
+   "element": "lightning",
+   "rank": "S",
+   "signs": [
+    "Ox",
+    "Hare",
+    "Dog",
+    "Monkey"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Kakashi Hatake"
+   ],
+   "desc": "A refined, denser Chidori said to have once cut a bolt of lightning in half.",
+   "tip": "Canon uses the same seals as Chidori; Dog was added to tell them apart.",
+   "fx": {
+    "type": "chidori",
+    "palette": "lightning",
+    "variant": "raikiri"
+   }
+  },
+  {
+   "id": "mystical-palm",
+   "name": "Mystical Palm Technique",
+   "jp": "掌仙術",
+   "romaji": "Shōsen Jutsu",
+   "element": "medical",
+   "rank": "A",
+   "signs": [
+    "Ox",
+    "Tiger",
+    "Gassho"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Tsunade",
+    "Sakura Haruno",
+    "Kabuto Yakushi"
+   ],
+   "desc": "Hands glow green as chakra pours into a wound, speeding the body's own repair from the inside.",
+   "tip": "Canon is a modified Ox then Tiger; the app adds Gassho to finish. Breathe slowly, like you're calming a patient.",
+   "fx": {
+    "type": "healingGlow",
+    "palette": "medical",
+    "variant": "mystical"
+   }
+  },
+  {
+   "id": "clone",
+   "name": "Clone Jutsu",
+   "jp": "分身の術",
+   "romaji": "Bunshin no Jutsu",
+   "element": "ninjutsu",
+   "rank": "E",
+   "signs": [
+    "Ram",
+    "Snake",
+    "Tiger"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Iruka Umino",
+    "Naruto Uzumaki"
+   ],
+   "desc": "The first trick every academy student learns: hollow copies of yourself that look real but fade at the first touch.",
+   "tip": "Keep it light. Three quick signs, then imagine two outlines of yourself stepping out to each side.",
+   "fx": {
+    "type": "shadowClone",
+    "palette": "smoke",
+    "variant": "clone",
+    "count": 2
+   }
+  },
+  {
+   "id": "substitution",
+   "name": "Substitution Jutsu",
+   "jp": "変わり身の術",
+   "romaji": "Kawarimi no Jutsu",
+   "element": "ninjutsu",
+   "rank": "E",
+   "signs": [
+    "Tiger",
+    "Boar",
+    "Ox",
+    "Dog",
+    "Snake"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Kakashi Hatake",
+    "Naruto Uzumaki"
+   ],
+   "desc": "At the instant of impact you swap places with a nearby object, leaving the attacker striking a plain wooden log.",
+   "tip": "Flow through the five signs smoothly; the log appears in a puff where you stood.",
+   "fx": {
+    "type": "substitution",
+    "palette": "smoke"
+   }
+  },
+  {
+   "id": "transformation",
+   "name": "Transformation Jutsu",
+   "jp": "変化の術",
+   "romaji": "Henge no Jutsu",
+   "element": "ninjutsu",
+   "rank": "E",
+   "signs": [
+    "Dog",
+    "Boar",
+    "Ram"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Naruto Uzumaki",
+    "Tsunade"
+   ],
+   "desc": "A cloud of smoke and you wear someone else's shape: a classmate, a stranger, even a shuriken.",
+   "tip": "Finish on a crisp Ram and hold it as the smoke clears.",
+   "fx": {
+    "type": "transformation",
+    "palette": "smoke",
+    "variant": "poof"
+   }
+  },
+  {
+   "id": "body-flicker",
+   "name": "Body Flicker Technique",
+   "jp": "瞬身の術",
+   "romaji": "Shunshin no Jutsu",
+   "element": "ninjutsu",
+   "rank": "D",
+   "signs": [
+    "Tiger",
+    "Bird",
+    "Hare"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Shisui Uchiha",
+    "Kakashi Hatake"
+   ],
+   "desc": "Chakra-boosted footwork so fast it looks like teleporting, leaving only an afterimage behind.",
+   "tip": "Canon uses a single Tiger; this app adds Bird and Hare. Move your hands fast, then freeze.",
+   "fx": {
+    "type": "smokeEscape",
+    "palette": "chakra",
+    "variant": "flicker"
+   }
+  },
+  {
+   "id": "chakra-flow",
+   "name": "Chakra Flow",
+   "jp": "チャクラ流し",
+   "romaji": "Chakura Nagashi",
+   "element": "ninjutsu",
+   "rank": "B",
+   "signs": [
+    "Dog",
+    "Horse",
+    "Snake"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Sasuke Uchiha",
+    "Asuma Sarutobi"
+   ],
+   "desc": "Running chakra along a weapon or your own body so a plain edge suddenly cuts, crackles or burns.",
+   "tip": "Imagine chakra running down your arm into an invisible sword.",
+   "fx": {
+    "type": "chakraBlade",
+    "palette": "chakra",
+    "variant": "flow"
+   }
+  },
+  {
+   "id": "shadow-clone",
+   "name": "Shadow Clone Jutsu",
+   "jp": "影分身の術",
+   "romaji": "Kage Bunshin no Jutsu",
+   "element": "ninjutsu",
+   "rank": "B",
+   "signs": [
+    "Ram",
+    "Mizunoe",
+    "Tiger"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Naruto Uzumaki",
+    "Kakashi Hatake",
+    "Itachi Uchiha"
+   ],
+   "desc": "Splits your chakra evenly into solid copies that can fight, scout and learn, then hand their memories back to you.",
+   "tip": "Canon uses a cross-shaped clone seal the detector can't see; Mizunoe stands in for it. Hold it firmly before the final Tiger.",
+   "fx": {
+    "type": "shadowClone",
+    "palette": "chakra",
+    "variant": "clone",
+    "count": 4
+   }
+  },
+  {
+   "id": "clone-great-explosion",
+   "name": "Clone Great Explosion",
+   "jp": "分身大爆破",
+   "romaji": "Bunshin Daibakuha",
+   "element": "ninjutsu",
+   "rank": "A",
+   "signs": [
+    "Tiger",
+    "Mizunoe",
+    "Boar",
+    "Bird"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Itachi Uchiha"
+   ],
+   "desc": "A shadow clone grabs hold of the enemy and then detonates its own chakra in a violent blast.",
+   "tip": "Make the clone, then snap into Bird as the trigger.",
+   "fx": {
+    "type": "shadowClone",
+    "palette": "fire",
+    "variant": "explode",
+    "count": 1
+   }
+  },
+  {
+   "id": "rasengan",
+   "name": "Rasengan",
+   "jp": "螺旋丸",
+   "romaji": "Rasengan",
+   "element": "ninjutsu",
+   "rank": "A",
+   "signs": [
+    "Hare",
+    "Mizunoe"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Naruto Uzumaki",
+    "Minato Namikaze",
+    "Jiraiya"
+   ],
+   "desc": "A spinning sphere of pure chakra held in one palm, grinding into whatever it touches.",
+   "tip": "Canon needs no signs at all; this short pair is the app's trigger. Then open one palm and imagine wind spinning in it.",
+   "fx": {
+    "type": "rasengan",
+    "palette": "chakra",
+    "variant": "normal"
+   }
+  },
+  {
+   "id": "sand-coffin",
+   "name": "Sand Coffin",
+   "jp": "砂縛柩",
+   "romaji": "Sabaku Kyū",
+   "element": "sand",
+   "rank": "B",
+   "signs": [
+    "Ram",
+    "Tiger",
+    "Gassho"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Gaara"
+   ],
+   "desc": "Sand pours over the target and hardens into a tight shell, pinning them completely.",
+   "tip": "Gaara needs no seals; close your hand into a fist after the last sign.",
+   "fx": {
+    "type": "sandSwirl",
+    "palette": "sand",
+    "variant": "coffin"
+   }
+  },
+  {
+   "id": "sand-shield",
+   "name": "Shield of Sand",
+   "jp": "砂の盾",
+   "romaji": "Suna no Tate",
+   "element": "sand",
+   "rank": "B",
+   "signs": [
+    "Dog",
+    "Rat",
+    "Monkey"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Gaara"
+   ],
+   "desc": "Sand rises on its own to block any attack, forming a curved barrier before the caster even reacts.",
+   "tip": "Gaara's sand moves on its own; these three signs are the app's trigger. Raise one arm as the wall forms.",
+   "fx": {
+    "type": "sandSwirl",
+    "palette": "sand",
+    "variant": "shield"
+   }
+  },
+  {
+   "id": "eight-trigrams-seal",
+   "name": "Eight Trigrams Sealing Style",
+   "jp": "八卦の封印式",
+   "romaji": "Hakke no Fūin Shiki",
+   "element": "sealing",
+   "rank": "S",
+   "signs": [
+    "Snake",
+    "Bird",
+    "Ram",
+    "Gassho"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Minato Namikaze",
+    "Kushina Uzumaki"
+   ],
+   "desc": "A spiral seal written onto the body that locks something immense inside while slowly leaking its chakra to the host.",
+   "tip": "Picture a spiral of script glowing on your stomach as you press your palms together.",
+   "fx": {
+    "type": "sealing",
+    "palette": "seal",
+    "variant": "seal"
+   }
+  },
+  {
+   "id": "laser-circus",
+   "name": "Storm Style: Laser Circus",
+   "jp": "嵐遁・励挫鎖苛素",
+   "romaji": "Ranton: Reizā Sākasu",
+   "element": "storm",
+   "rank": "A",
+   "signs": [
+    "Rat",
+    "Tiger",
+    "Dog",
+    "Snake",
+    "Dragon"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Darui"
+   ],
+   "desc": "Beams of crackling storm chakra fire from the hands and bend through the air to chase their targets.",
+   "tip": "Five signs ending on Dragon, then spread your fingers to fire the beams.",
+   "fx": {
+    "type": "chidori",
+    "palette": "lightning",
+    "variant": "current"
+   }
+  },
+  {
+   "id": "hidden-mist",
+   "name": "Hidden Mist Jutsu",
+   "jp": "霧隠れの術",
+   "romaji": "Kirigakure no Jutsu",
+   "element": "water",
+   "rank": "D",
+   "signs": [
+    "Ox",
+    "Snake",
+    "Ram"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Zabuza Momochi"
+   ],
+   "desc": "Chakra-laced fog rolls in until the battlefield is a white blank, perfect for a silent approach.",
+   "tip": "Ox, Snake, Ram, then hold Ram still while the fog thickens.",
+   "fx": {
+    "type": "mist",
+    "palette": "smoke"
+   }
+  },
+  {
+   "id": "water-prison",
+   "name": "Water Style: Water Prison Jutsu",
+   "jp": "水牢の術",
+   "romaji": "Suirō no Jutsu",
+   "element": "water",
+   "rank": "C",
+   "signs": [
+    "Snake",
+    "Ox",
+    "Gassho"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Zabuza Momochi",
+    "Kisame Hoshigaki"
+   ],
+   "desc": "A sphere of dense water seals the target inside; the caster keeps one hand in it to hold the cage shut.",
+   "tip": "Finish by pressing both palms together, then imagine holding a heavy ball of water.",
+   "fx": {
+    "type": "waterPrison",
+    "palette": "water"
+   }
+  },
+  {
+   "id": "collision-destruction",
+   "name": "Water Style: Collision Destruction",
+   "jp": "水遁・爆水衝波",
+   "romaji": "Suiton: Bakusui Shōha",
+   "element": "water",
+   "rank": "B",
+   "signs": [
+    "Snake",
+    "Dragon",
+    "Mizunoe"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Kisame Hoshigaki"
+   ],
+   "desc": "The caster spews out a staggering mass of water that turns dry land into open sea, then drives the swell into the enemy.",
+   "tip": "Canon uses a single Snake; Dragon and Mizunoe are added here. Push both hands outward on the last sign.",
+   "fx": {
+    "type": "waterWave",
+    "palette": "water",
+    "variant": "collision"
+   }
+  },
+  {
+   "id": "water-dragon-bullet",
+   "name": "Water Style: Water Dragon Bullet Jutsu",
+   "jp": "水遁・水龍弾の術",
+   "romaji": "Suiton: Suiryūdan no Jutsu",
+   "element": "water",
+   "rank": "B",
+   "signs": [
+    "Ox",
+    "Monkey",
+    "Hare",
+    "Rat",
+    "Boar",
+    "Bird",
+    "Ox",
+    "Horse"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Zabuza Momochi",
+    "Kakashi Hatake"
+   ],
+   "desc": "A column of water rises and twists into a roaring serpent that lunges at the target with crushing weight.",
+   "tip": "Canon uses 44 seals; this is the opening eight. Keep a steady rhythm, like reciting a long chant.",
+   "fx": {
+    "type": "dragon",
+    "palette": "water",
+    "variant": "water"
+   }
+  },
+  {
+   "id": "water-fang-bullet",
+   "name": "Water Style: Water Fang Bullet",
+   "jp": "水遁・水牙弾",
+   "romaji": "Suiton: Suigadan",
+   "element": "water",
+   "rank": "B",
+   "signs": [
+    "Tiger",
+    "Mizunoe",
+    "Snake"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Itachi Uchiha"
+   ],
+   "desc": "Water underfoot spirals into drill-like fangs that spring up and stab inward.",
+   "tip": "Canon is a lone Tiger; this app uses three signs. Hold Snake low, as if lifting water from the ground.",
+   "fx": {
+    "type": "waterBullets",
+    "palette": "water",
+    "variant": "fang"
+   }
+  },
+  {
+   "id": "water-shark-bomb",
+   "name": "Water Style: Water Shark Bomb Jutsu",
+   "jp": "水遁・水鮫弾の術",
+   "romaji": "Suiton: Suikōdan no Jutsu",
+   "element": "water",
+   "rank": "B",
+   "signs": [
+    "Tiger",
+    "Ox",
+    "Dragon",
+    "Hare",
+    "Bird",
+    "Dragon",
+    "Ram"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Kisame Hoshigaki",
+    "Kakashi Hatake"
+   ],
+   "desc": "Gathered water takes the shape of a hungry shark that races forward and bursts on impact.",
+   "tip": "Canon has ten seals including a clone seal; this is the seven-seal order from the detector project. Snap the final Ram like you are releasing the shark.",
+   "fx": {
+    "type": "waterShark",
+    "palette": "water",
+    "variant": "single"
+   }
+  },
+  {
+   "id": "great-breakthrough",
+   "name": "Wind Style: Great Breakthrough",
+   "jp": "風遁・大突破",
+   "romaji": "Fūton: Daitoppa",
+   "element": "wind",
+   "rank": "C",
+   "signs": [
+    "Tiger",
+    "Ox",
+    "Dog",
+    "Hare",
+    "Snake"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Orochimaru",
+    "Gaara"
+   ],
+   "desc": "A violent blast of wind is exhaled or pushed out, flattening trees and blowing enemies off their feet.",
+   "tip": "End on Snake, then thrust both palms forward to push the gust out.",
+   "fx": {
+    "type": "airBullets",
+    "palette": "wind",
+    "variant": "breakthrough"
+   }
+  },
+  {
+   "id": "sickle-weasel",
+   "name": "Wind Style: Sickle Weasel Jutsu",
+   "jp": "カマイタチの術",
+   "romaji": "Kamaitachi no Jutsu",
+   "element": "wind",
+   "rank": "C",
+   "signs": [
+    "Snake",
+    "Dragon",
+    "Bird"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Temari"
+   ],
+   "desc": "One swing of a giant fan whips up a gust full of invisible blades that shreds whatever it passes.",
+   "tip": "Finish on Bird and swing your arm wide like a fan.",
+   "fx": {
+    "type": "windBlades",
+    "palette": "wind",
+    "variant": "scythe"
+   }
+  },
+  {
+   "id": "wind-cutter",
+   "name": "Wind Style: Wind Cutter Jutsu",
+   "jp": "風遁・風切りの術",
+   "romaji": "Fūton: Kazekiri no Jutsu",
+   "element": "wind",
+   "rank": "C",
+   "signs": [
+    "Tiger",
+    "Hare",
+    "Dog",
+    "Ram",
+    "Dragon"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Temari"
+   ],
+   "desc": "A thin, sharp slice of wind is flung forward to cut through ropes, wood or armor at range.",
+   "tip": "Finish on Dragon and slice one hand sideways like a blade.",
+   "fx": {
+    "type": "windBlades",
+    "palette": "wind",
+    "variant": "slash",
+    "count": 2
+   }
+  },
+  {
+   "id": "vacuum-sphere",
+   "name": "Wind Style: Vacuum Sphere",
+   "jp": "風遁・真空玉",
+   "romaji": "Fūton: Shinkūgyoku",
+   "element": "wind",
+   "rank": "B",
+   "signs": [
+    "Rat",
+    "Hare",
+    "Dog"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Danzō Shimura"
+   ],
+   "desc": "Rapid-fire vacuum bullets are spat out one after another, each one a tiny pocket of cutting air.",
+   "tip": "Only three signs: Rat, Hare, Dog. Hold Dog and puff your cheeks for the volley.",
+   "fx": {
+    "type": "airBullets",
+    "palette": "wind",
+    "variant": "vacuum",
+    "count": 6
+   }
+  },
+  {
+   "id": "rasenshuriken",
+   "name": "Wind Style: Rasenshuriken",
+   "jp": "風遁・螺旋手裏剣",
+   "romaji": "Fūton: Rasenshuriken",
+   "element": "wind",
+   "rank": "S",
+   "signs": [
+    "Mizunoe",
+    "Hare",
+    "Dragon",
+    "Bird"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Naruto Uzumaki"
+   ],
+   "desc": "Wind chakra is folded into a Rasengan until it sprouts shrieking blades and cuts at the level of cells.",
+   "tip": "Canon has no signs. Raise your palm high at the end; the shuriken forms above it.",
+   "fx": {
+    "type": "rasengan",
+    "palette": "wind",
+    "variant": "shuriken"
+   }
+  },
+  {
+   "id": "four-pillar-prison",
+   "name": "Wood Style: Four-Pillar Prison Jutsu",
+   "jp": "木遁・四柱牢の術",
+   "romaji": "Mokuton: Shichūrō no Jutsu",
+   "element": "wood",
+   "rank": "A",
+   "signs": [
+    "Ram",
+    "Ox",
+    "Boar",
+    "Snake"
+   ],
+   "signsSource": "canon",
+   "users": [
+    "Yamato"
+   ],
+   "desc": "Wooden pillars shoot up around the target and lock together into a sturdy cage.",
+   "tip": "Ram, Ox, Boar, Snake; hold Snake while the pillars close in.",
+   "fx": {
+    "type": "woodGrowth",
+    "palette": "wood",
+    "variant": "prison"
+   }
+  },
+  {
+   "id": "wood-dragon",
+   "name": "Wood Style: Wood Dragon Jutsu",
+   "jp": "木遁・木龍の術",
+   "romaji": "Mokuton: Mokuryū no Jutsu",
+   "element": "wood",
+   "rank": "S",
+   "signs": [
+    "Snake",
+    "Ram",
+    "Hare",
+    "Dog"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Hashirama Senju"
+   ],
+   "desc": "A colossal dragon of living timber coils out of the ground and binds its prey while sapping its chakra.",
+   "tip": "Canon order minus the final technique-specific seal.",
+   "fx": {
+    "type": "dragon",
+    "palette": "wood",
+    "variant": "wood"
+   }
+  },
+  {
+   "id": "eight-gates",
+   "name": "Eight Gates Released Formation",
+   "jp": "八門遁甲の陣",
+   "romaji": "Hachimon Tonkō no Jin",
+   "element": "yang",
+   "rank": "S",
+   "signs": [
+    "Horse",
+    "Boar",
+    "Tiger",
+    "Ox"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Might Guy",
+    "Rock Lee"
+   ],
+   "desc": "Forcing open the body's chakra gates one by one unlocks impossible strength, wrapped in a boiling aura of sweat turned to steam.",
+   "tip": "A taijutsu art with no canon signs. Clench your fists after Ox and tense every muscle.",
+   "fx": {
+    "type": "chakraAura",
+    "palette": "boil",
+    "variant": "gates"
+   }
+  },
+  {
+   "id": "sage-mode",
+   "name": "Sage Mode",
+   "jp": "仙人モード",
+   "romaji": "Sennin Mōdo",
+   "element": "yang",
+   "rank": "S",
+   "signs": [
+    "Gassho",
+    "Snake",
+    "Gassho"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Naruto Uzumaki",
+    "Jiraiya",
+    "Hashirama Senju"
+   ],
+   "desc": "Sitting perfectly still, you draw nature energy into your body until your senses and strength surge.",
+   "tip": "Canon has no signs, just stillness. Press your palms, breathe, then press again, and stay still for a moment.",
+   "fx": {
+    "type": "chakraAura",
+    "palette": "fire",
+    "variant": "sage"
+   }
+  },
+  {
+   "id": "shadow-imitation",
+   "name": "Shadow Possession Jutsu",
+   "jp": "影真似の術",
+   "romaji": "Kagemane no Jutsu",
+   "element": "yin",
+   "rank": "C",
+   "signs": [
+    "Rat",
+    "Ox",
+    "Rat"
+   ],
+   "signsSource": "adapted",
+   "users": [
+    "Shikamaru Nara",
+    "Shikaku Nara"
+   ],
+   "desc": "Your shadow stretches across the ground, latches onto the target's and forces them to copy every move you make.",
+   "tip": "Canon is a single Rat; here it's Rat, Ox, Rat. Drop your hands and break the Rat between, or it won't count twice.",
+   "fx": {
+    "type": "shadowPossession",
+    "palette": "shadow",
+    "variant": "possession"
+   }
+  }
+ ]
+}
