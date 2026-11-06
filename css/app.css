@@ -129,6 +129,7 @@ input { caret-color: var(--shu-hi); }
   position: absolute; inset: 0; z-index: 0; display: grid; place-content: center; justify-items: center; gap: 10px;
   color: var(--bone-3); font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
 }
+.stage-off span::before { content: attr(data-k); }
 .stage-off span { font: 400 clamp(56px, 12vw, 120px)/1 var(--f-brush); color: #706450; letter-spacing: 0; text-transform: none; }
 body.live .stage-off { display: none; }
 
