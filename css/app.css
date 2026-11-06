@@ -189,6 +189,17 @@ body.live .stage-off { display: none; }
 @keyframes pop { from { transform: scale(.4); opacity: 0; } 60% { transform: scale(1.18); opacity: 1; } }
 @keyframes brush { from { clip-path: inset(0 100% 0 0); filter: blur(6px); transform: scale(1.08); } to { clip-path: inset(0 -10% 0 0); filter: blur(0); transform: none; } }
 @keyframes settle { from { opacity: 0; transform: translateY(8px); filter: blur(3px); } to { opacity: 1; transform: none; filter: none; } }
+/* Phones: the stage is short, so the title becomes a slim band on the top edge and the XP chip
+   drops to the bottom edge, leaving the face and hands (where effects play) clear. */
+@media (max-width: 700px) {
+  .callout { inset: 8px 0 10px; grid-template-rows: auto auto auto 1fr; gap: 2px; padding: 0 84px; }
+  .callout-k { font-size: 28px; }
+  .callout-r { font-size: 12px; }
+  .callout-n { font-size: 11px; gap: 6px; }
+  .callout-xp { align-self: end; min-width: 0; margin: 0 -70px; padding: 5px 10px; column-gap: 8px; row-gap: 5px; font-size: 12px; }
+  .callout-xp b { font-size: 16px; }
+  body.casting .readout { opacity: 0; }
+}
 
 /* ---------- seals, pictograms, tiles ---------- */
 .picto { width: 100%; height: 100%; display: block; overflow: visible; }
@@ -589,6 +600,8 @@ dialog.sheet::backdrop { background: rgb(5 4 3 / .72); }
 .toast.warn { border-color: #6a5427; }
 .toast.unlock { border-color: #7a3a2b; }
 @media (min-width: 960px) { .toasts { left: auto; right: 16px; transform: none; } }
+/* below 960 the stage sits at the top, so toasts go to the bottom, over the panel, not the effect */
+@media (max-width: 959px) { .toasts { top: auto; bottom: calc(12px + env(safe-area-inset-bottom)); } }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0s !important; transition-duration: .01ms !important; }
