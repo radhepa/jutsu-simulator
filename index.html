@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jutsu Simulator</title>
+<style>
+  :root { --ink:#f3ead8; --dim:#9a8f7c; --fire:#ff7a1a; --bg:#120d0a; }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 900px; margin: 0 auto; padding: 16px; display:flex; flex-direction:column; gap:14px; }
+  header { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  h1 { margin:0; font-size: clamp(1.3rem, 4vw, 1.9rem); letter-spacing:.04em; }
+  h1 span { color: var(--fire); }
+  button { font: inherit; color: var(--ink); background:#2a1d14; border:1px solid #5a3a22;
+    border-radius: 10px; padding: 10px 16px; cursor:pointer; }
+  button:hover { background:#3a271a; }
+  button.primary { background: var(--fire); color:#1b0f06; border-color: var(--fire); font-weight:700; }
+  #stage { position:relative; width:100%; aspect-ratio: 4 / 3; background:#000; border-radius:14px; overflow:hidden; }
+  #view { width:100%; height:100%; display:block; }
+  #startCard { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center;
+    justify-content:center; gap:14px; text-align:center; padding:20px; background:#0b0806e6; }
+  #status { position:absolute; left:10px; bottom:10px; background:#000a; padding:6px 10px;
+    border-radius:8px; font-size:.9rem; }
+  #seq { display:grid; grid-template-columns: repeat(6, 1fr); gap:8px; }
+  .sign { background:#1d140e; border:2px solid #3b2a1d; border-radius:12px; padding:10px 6px;
+    text-align:center; transition: all .2s; }
+  .sign b { display:block; font-size: clamp(1.3rem, 5vw, 2rem); }
+  .sign small { color: var(--dim); font-size:.75rem; }
+  .sign.next { border-color: var(--fire); background:#2e1c10; transform: translateY(-3px); }
+  .sign.done { background:#3d1f0b; border-color:#a34a10; opacity:.75; }
+  #hint { color: var(--dim); min-height: 2.6em; margin:0; }
+  #hint strong { color: var(--ink); }
+  footer { color: var(--dim); font-size:.75rem; line-height:1.5; }
+  footer a { color: var(--dim); }
+  dialog { background:#1d140e; color:var(--ink); border:1px solid #5a3a22; border-radius:14px; text-align:center; }
+  dialog::backdrop { background:#000b; }
+  #qr svg { background:#fff; padding:8px; border-radius:8px; width: 240px; height: 240px; }
+  @media (max-width:520px) { #seq { grid-template-columns: repeat(3, 1fr); } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Fire Style: <span>Fireball Jutsu</span></h1>
+    <div>
+      <button id="resetBtn">Reset</button>
+      <button id="qrBtn">Open on phone</button>
+    </div>
+  </header>
+
+  <div id="stage">
+    <canvas id="view" width="640" height="480"></canvas>
+    <div id="startCard">
+      <p>Make the 6 hand signs in order in front of your camera.<br>Hold each sign still for a moment.</p>
+      <button class="primary" id="startBtn">Start camera</button>
+      <small id="loadMsg"></small>
+    </div>
+    <div id="status" hidden></div>
+  </div>
+
+  <div id="seq"></div>
+  <p id="hint"></p>
+
+  <footer>
+    Fan project, not affiliated with Naruto or its owners. Video never leaves your device; detection runs in your browser.
+    Hand-sign model: <a href="https://github.com/Kazuhito00/NARUTO-HandSignDetection">Kazuhito00/NARUTO-HandSignDetection</a> (MIT).
+  </footer>
+</main>
+
+<dialog id="qrDialog">
+  <p>Scan to open on your phone</p>
+  <div id="qr"></div>
+  <p><small id="qrUrl"></small></p>
+  <button id="qrClose">Close</button>
+</dialog>
+
+<video id="cam" playsinline muted hidden></video>
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
